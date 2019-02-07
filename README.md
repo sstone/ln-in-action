@@ -48,7 +48,7 @@ generate 500
 
 ### Eclair
 
-Download [eclair-node-gui-0.2-beta8-52821b8.jar](https://github.com/ACINQ/eclair/releases/download/v0.2-beta8/eclair-node-gui-0.2-beta8-52821b8.jar) from our [eclair releases](https://github.com/ACINQ/eclair/releases) and save it to $DEMODIR.
+Download [eclair-node-gui-0.2-beta9-eb0e45a.jar](https://github.com/ACINQ/eclair/releases/download/v0.2-beta9/eclair-node-gui-0.2-beta9-eb0e45a.jar) from our [eclair releases](https://github.com/ACINQ/eclair/releases) and save it to $DEMODIR.
 
 Create 3 directories nodeA, nodeB, nodeC in $DEMODIR.
 
