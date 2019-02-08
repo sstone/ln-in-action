@@ -37,6 +37,11 @@ Start bitcoin-qt in regtest mode:
 $ bitcoin-qt -regtest -datadir=$DEMODIR
 ```
 
+Or if you are using Bitcoin Core 0.17.0 or:
+```
+$ bitcoin-qt -regtest -deprecatedrpc=generate -datadir=$DEMODIR
+```
+
 ![BitcoinQtEmpty](.readme/bitcoinqt1.png)
 
 
