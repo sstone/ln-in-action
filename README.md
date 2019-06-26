@@ -6,7 +6,7 @@ To make running this demo simple, we suggest that you create a specific director
 We will refer to this directory as $DEMODIR
 
 ### JDK
-Download and install JDK8 from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Download and install OpenJDK 11 from https://adoptopenjdk.net/
 Check that Java is installed properly:
 ```
 java -version
@@ -27,11 +27,6 @@ zmqpubrawtx=tcp://127.0.0.1:29000
 addresstype=p2sh-segwit
 ```
 
-:warning: If you are using Bitcoin Core 0.17.0 or newer you need to add following line to your `bitcoin.conf`:
-```
-deprecatedrpc=signrawtransaction
-```
-
 Start bitcoin-qt in regtest mode:
 ```
 $ bitcoin-qt -regtest -datadir=$DEMODIR
@@ -47,8 +42,8 @@ generate 500
 ```
 
 ### Eclair
-
-Download [eclair-node-gui-0.2-beta9-eb0e45a.jar](https://github.com/ACINQ/eclair/releases/download/v0.2-beta9/eclair-node-gui-0.2-beta9-eb0e45a.jar) from our [eclair releases](https://github.com/ACINQ/eclair/releases) and save it to $DEMODIR.
+eclair-node-gui-0.3-a5debcd.jar
+Download [eclair-node-gui-0.3-a5debcd.jar](https://github.com/ACINQ/eclair/releases/download/v0.3/eclair-node-gui-0.3-a5debcd.jar) from our [eclair releases](https://github.com/ACINQ/eclair/releases) and save it to $DEMODIR.
 
 Create 3 directories nodeA, nodeB, nodeC in $DEMODIR.
 
@@ -92,9 +87,9 @@ eclair.bitcoind.rpcport=18443
 
 Start 3 nodes A, B, C:
 ```
-$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeA -jar eclair-node-gui-0.2-beta8-52821b8.jar
-$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeB -jar eclair-node-gui-0.2-beta8-52821b8.jar
-$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeC -jar eclair-node-gui-0.2-beta8-52821b8.jar
+$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeA -jar eclair-node-gui-0.3-a5debcd.jar
+$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeB -jar eclair-node-gui-0.3-a5debcd.jar
+$ java -Declair.printToConsole -Declair.datadir=$DEMODIR/nodeC -jar eclair-node-gui-0.3-a5debcd.jar
 ```
 
 Connect A and B:
